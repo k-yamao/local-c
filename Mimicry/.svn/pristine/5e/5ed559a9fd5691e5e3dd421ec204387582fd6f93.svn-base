@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout_h1" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="horizontal"
+    android:weightSum="1" android:background="@drawable/bgcolormy">
+    <LinearLayout android:id="@+id/linearLayout_row"
+        android:orientation="horizontal" android:layout_height="wrap_content"
+        android:layout_margin="5dp" android:layout_width="fill_parent"
+        android:background="@drawable/white">
+
+        <ImageView android:id="@+id/mylib_image"
+            android:layout_width="80dp" android:layout_height="80dp"
+            android:layout_margin="10dp">
+        </ImageView>
+
+        <LinearLayout android:id="@+id/linearLayout_v1"
+            android:layout_width="0dp" android:layout_height="100dp"
+            android:layout_margin="5dp" android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView android:id="@+id/title_text" style="@style/mimicryrow6"
+                android:layout_width="wrap_content" android:layout_height="12dp"
+                android:text="@string/title_text">
+            </TextView>
+
+            <TextView android:id="@+id/rowtitle" style="@style/mimicryrow1"
+                android:layout_width="wrap_content" android:layout_height="30dp">
+            </TextView>
+
+            <TextView android:id="@+id/save_date_txet" style="@style/mimicryrow6"
+                android:layout_width="wrap_content" android:layout_height="12dp"
+                android:text="@string/save_date_text">
+            </TextView>
+
+            <TextView android:id="@+id/save_date" style="@style/mimicryrow5"
+                android:layout_width="wrap_content" android:layout_height="20dp">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

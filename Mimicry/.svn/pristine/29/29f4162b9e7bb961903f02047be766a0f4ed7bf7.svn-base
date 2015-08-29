@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<drawable name="white">#ffffff</drawable>
+	<drawable name="black">#000000</drawable>
+	<drawable name="bgcolor">#004CFF</drawable>
+	<drawable name="bgcolormy">#FF00FF</drawable>
+	<drawable name="bgcolorranking">#FFFF00</drawable>
+	<drawable name="bgcolorfb">#3b5998</drawable>
+	<drawable name="midashi">#A9A9A9</drawable>
+	<drawable name="list_normal">#FFFFFF</drawable>
+	<drawable name="list_active">#FF0000</drawable>
+	<drawable name="list_pressed">#FFFF00</drawable>
+</resources>

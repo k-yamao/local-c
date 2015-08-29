@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:myapp="http://schemas.android.com/apk/res/com.c.local.mimicry"
+    android:id="@android:id/tabhost" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:orientation="vertical" android:weightSum="1">
+        <FrameLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:id="@android:id/tabcontent" android:layout_weight="1">
+
+        </FrameLayout>
+        <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/topLayout"
+    >
+
+         <!-- Ad Placeholder -->
+    <com.google.ads.AdView xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ads:adUnitId="a15003b6995266d"
+        ads:adSize="BANNER"
+        ads:loadAdOnCreate="true"
+        android:layout_gravity="top"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+    /></LinearLayout>
+        <TabWidget android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:id="@android:id/tabs" android:textColor="@color/white"></TabWidget>
+    </LinearLayout>
+</TabHost>
+

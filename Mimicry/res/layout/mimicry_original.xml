@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/bgcolor">
+
+	<LinearLayout android:id="@+id/Layout_row"
+		android:orientation="vertical" android:layout_margin="5dp"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/white">
+
+		<LinearLayout
+			android:orientation="horizontal" android:layout_width="fill_parent"
+			android:layout_height="130dp">
+
+			<ImageView android:id="@+id/imageView"
+				android:layout_height="80dp" android:layout_width="80dp"
+				android:layout_margin="10dp" android:onClick="onCamera"></ImageView>
+
+			<LinearLayout android:id="@+id/linearLayout_v1"
+				android:orientation="vertical" android:layout_height="150dp"
+				android:layout_margin="5dp" android:layout_width="fill_parent">
+
+				<TextView android:id="@+id/title" android:layout_width="wrap_content"
+					android:layout_height="30dp" style="@style/mimicryrow1"></TextView>
+
+				<LinearLayout android:id="@+id/linearLayout_h2"
+					android:orientation="horizontal" android:layout_height="150dp"
+					android:layout_width="wrap_content">
+
+					<TextView android:text="@string/original_description_txet"
+						style="@style/mimicryrow5" android:id="@+id/original_description_txet"
+						android:layout_width="0dp" android:layout_weight="1"
+						android:layout_height="150dp"></TextView>
+
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="100dp" android:layout_margin="10dp">
+
+			<TextView android:text="@string/original_title_text"
+				android:id="@+id/old_standby_text" style="@style/mimicryrow2"
+				android:layout_width="fill_parent" android:layout_height="30dp"></TextView>
+			<EditText android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/original_title"
+				android:inputType="textPersonName" android:hint="@string/original_title_hint" android:layout_marginBottom="30dp"
+				android:maxLength="20">
+				<requestFocus></requestFocus>
+			</EditText>
+
+
+		</LinearLayout>
+
+
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+			android:layout_height="60dp" android:layout_margin="10dp" android:layout_marginBottom="30dp">
+
+			<ImageView android:id="@+id/rec" android:layout_height="50dp"
+				android:layout_width="50dp" android:layout_weight="1"
+				android:layout_margin="10dp" android:src="@drawable/rec_btn"
+				android:onClick="onClickRecord"></ImageView>
+
+			<ImageView android:id="@+id/play" android:layout_height="50dp"
+				android:layout_width="50dp" android:layout_weight="1"
+				android:layout_margin="10dp" android:src="@drawable/play_btn"
+				android:onClick="onClickPlaying"></ImageView>
+			<ImageView android:id="@+id/save" android:layout_height="50dp"
+				android:layout_width="50dp" android:layout_weight="1"
+				android:layout_margin="10dp" android:src="@drawable/save_btn"
+				android:onClick="onClickSave"></ImageView>
+			<ImageView android:id="@+id/sns" android:layout_height="50dp"
+				android:layout_width="50dp" android:layout_weight="1"
+				android:layout_margin="10dp" android:src="@drawable/facebook"
+				android:onClick="onFacebookShare"></ImageView>
+
+		</LinearLayout>
+	    <Button android:id="@+id/cansel_btn" android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp"
+                    android:onClick="onCansel" android:text="@string/back_text" android:layout_marginTop="20dp">
+        </Button>
+	</LinearLayout>
+
+</LinearLayout>

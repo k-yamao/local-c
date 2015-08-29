@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/LinearLayout_h1"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:weightSum="1" android:orientation="vertical"
+	android:background="@drawable/bgcolor">
+
+	<LinearLayout android:id="@+id/linearLayout_row"
+		android:orientation="horizontal" android:layout_height="wrap_content"
+		android:layout_margin="1dp" android:layout_width="fill_parent" android:background="@drawable/white">
+
+		<ImageView android:id="@+id/imageView"
+			android:layout_height="80dp" android:layout_width="80dp"
+			android:layout_margin="10dp" android:contentDescription="@string/image"></ImageView>
+
+		<LinearLayout android:id="@+id/linearLayout_v1"
+			android:orientation="vertical" android:layout_height="100dp"
+			android:layout_margin="5dp" android:layout_width="0dp"
+			android:layout_weight="1">
+
+			<TextView android:id="@+id/rowtitle" android:layout_width="wrap_content"
+				android:layout_height="30dp" style="@style/mimicryrow1"></TextView>
+
+			<LinearLayout android:id="@+id/linearLayout_h2"
+				android:orientation="horizontal" android:layout_height="30dp"
+				android:layout_width="wrap_content">
+
+				<TextView android:text="@string/chage_level_txet" style="@style/mimicryrow2"
+					android:id="@+id/change_level_txet"
+					android:layout_width="0dp" android:layout_weight="1"
+					android:layout_height="30dp"></TextView>
+
+				<TextView android:id="@+id/change_level" style="@style/mimicryrow3"
+					android:layout_width="0dp" android:layout_weight="1"
+					android:layout_height="30dp"></TextView>
+
+			</LinearLayout>
+			<LinearLayout android:id="@+id/linearLayout_h3"
+				android:orientation="horizontal" android:layout_height="30dp"
+				android:layout_width="wrap_content">
+
+				<TextView android:text="@string/rating_txet" android:id="@+id/rating_txet"
+					style="@style/mimicryrow2" android:layout_width="fill_parent"
+					android:layout_height="30dp"></TextView>
+
+				<TextView android:id="@+id/rating"
+					style="@style/mimicryrow3" android:layout_width="wrap_content"
+					android:layout_height="30dp"></TextView>
+
+			</LinearLayout>
+
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

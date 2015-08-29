@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:background="@drawable/midashi" android:orientation="vertical">
+<ScrollView
+  android:id="@+id/ScrollView"
+  android:layout_height="fill_parent"
+  android:layout_width="fill_parent">
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<TextView android:id="@+id/listtitle" android:layout_width="fill_parent"
+		android:layout_height="50dp" style="@style/mtitle"/>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_margin="5dp"
+		android:background="@color/white" android:orientation="vertical">
+
+		<TextView android:text="@string/facebook_sign_txt"
+			android:id="@+id/facebook_sign_txt" style="@style/mimicryrow7"
+			android:layout_width="fill_parent" android:layout_height="40dp"
+			android:background="@drawable/midashi" android:layout_margin="10dp"
+			android:padding="5dp"></TextView>
+		<TextView android:id="@+id/fbname" style="@style/mimicryrow4"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp" android:layout_marginRight="10dp" />
+
+		<ImageView android:id="@+id/fblogin" android:layout_width="80dp"
+			android:layout_height="80dp" android:layout_margin="10dp"
+			android:contentDescription="@string/fbauth" android:onClick="onLogin">
+		</ImageView>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_margin="5dp"
+		android:background="@color/white" android:orientation="vertical">
+		<TextView android:text="@string/nicname_txt" android:id="@+id/nicname_txt"
+			style="@style/mimicryrow7" android:layout_width="fill_parent"
+			android:layout_height="40dp" android:background="@drawable/midashi"
+			android:layout_margin="10dp" android:padding="5dp"></TextView>
+
+		<EditText android:id="@+id/nicname" android:maxLength="20"
+			android:layout_height="wrap_content" android:layout_width="match_parent"
+			android:layout_margin="10dp">
+			<requestFocus></requestFocus>
+		</EditText>
+
+		<Button android:layout_height="wrap_content" android:id="@+id/nicname_regist_btn"
+			android:text="@string/nicname_regist" android:layout_margin="10dp"
+			android:layout_width="match_parent" android:onClick="onNicnameRegist"></Button>
+
+
+	</LinearLayout>
+</LinearLayout>
+	</ScrollView>
+	</LinearLayout>

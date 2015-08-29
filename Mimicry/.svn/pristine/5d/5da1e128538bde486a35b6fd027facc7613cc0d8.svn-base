@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:gravity="center_horizontal" android:orientation="vertical"
+	android:background="@drawable/bgcolorfb">
+
+	<LinearLayout android:id="@+id/Layout_row"
+		android:orientation="vertical" android:layout_margin="5dp"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/white">
+
+		<TextView android:id="@+id/facebookName"
+			android:layout_width="fill_parent" android:layout_height="40dp"
+			style="@style/mimicryrow4" android:layout_marginTop="5dp"
+			android:layout_marginLeft="5dp" android:layout_marginRight="5dp" />
+
+		<LinearLayout android:id="@+id/contribution_layout"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="vertical" android:layout_margin="5dp">
+
+			<TextView android:id="@+id/facebook_comment_text" style="@style/mimicryrow2"
+				android:layout_width="fill_parent" android:layout_height="30dp"
+				android:text="@string/facebook_comment_text">
+			</TextView>
+
+			<EditText android:id="@+id/fb_comment" android:layout_width="fill_parent"
+				android:layout_height="100dp" android:hint="@string/facebook_comment_hint"
+				android:inputType="textMultiLine">
+			</EditText>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="100dp" android:orientation="horizontal">
+
+				<ImageView android:id="@+id/facebookimg"
+					android:layout_width="80dp" android:layout_height="80dp"
+					android:layout_margin="10dp" android:src="@drawable/noimage">
+				</ImageView>
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="100dp" android:orientation="vertical">
+					<TextView android:id="@+id/nicname" style="@style/mimicryrow1"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_margin="10dp">
+					</TextView>
+					<TextView android:id="@+id/title" style="@style/mimicryrow1"
+						android:layout_width="wrap_content" android:layout_height="30dp"
+						android:layout_margin="10dp">
+					</TextView>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/linearLayout_v1"
+				android:layout_width="fill_parent" android:layout_height="100dp"
+				android:layout_margin="5dp" android:orientation="vertical">
+
+				<TextView android:id="@+id/fileurl" style="@style/mimicryrow2"
+					android:layout_width="wrap_content" android:layout_height="150dp">
+				</TextView>
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="100dp" android:orientation="horizontal">
+
+				<Button android:id="@+id/cansel_btn" android:layout_width="0dp"
+					android:layout_height="50dp" android:layout_margin="10dp"
+					android:layout_weight="1" android:onClick="onCansel" android:text="@string/cansel_text">
+				</Button>
+
+				<Button android:id="@+id/contribution_btn"
+					android:layout_width="0dp" android:layout_height="50dp"
+					android:layout_margin="10dp" android:layout_weight="1"
+					android:onClick="onClickContribution" android:text="@string/contribution_text">
+				</Button>
+			</LinearLayout>
+		</LinearLayout>
+
+	</LinearLayout>
+</LinearLayout>

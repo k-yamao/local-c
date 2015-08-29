@@ -1,0 +1,77 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.c.local.mimicry"
+    android:versionCode="9"
+    android:versionName="1.7">
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+	<application android:icon="@drawable/mimicry_logo3"
+		android:label="@string/app_name">
+		<activity android:name=".SplashActivity" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="com.dropbox.client2.android.AuthActivity"
+			android:launchMode="singleTask" android:configChanges="orientation|keyboard">
+			<intent-filter>
+				<!-- Change this to be db- followed by your app key -->
+				<data android:scheme="db-sq4lxd2m8zsvd6t" />
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".DropboxTestActivity"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".DropboxActivity"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".HomeActivity"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".MimicryLibActivity"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".MimicryLibDetailActivity"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".FacebookUploadActivity"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".MimicryMyLibActivity"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".MimicryMyLibDetailActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.SEND" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="text/*" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MimicryLibDetailVideoActivity"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".MimicryRankingActivity"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".MimicryRanking2Activity"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".MimicryRankingDetailActivity"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".SettingActivity"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".CameraActivity"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name="com.google.ads.AdActivity"
+              android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+	</application>
+
+</manifest>

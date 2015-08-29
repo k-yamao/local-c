@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+	<string name="hello" translatable="false">Hello World, Home!</string>
+	<string name="app_name" translatable="false">Mimicry</string>
+	<string name="option_menu_add_label" translatable="false">全て更新</string>
+	<string name="empty" translatable="false">データがありません</string>
+	<string name="update_btn" translatable="false">更新する</string>
+	<string name="next_btn" translatable="false">次へ</string>
+	<string name="back_btn" translatable="false">前へ</string>
+
+	<style name="common">
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textSize">20sp</item>
+	</style>
+
+    <style name="mtitle">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">10sp</item>
+        <item name="android:background">#A9A9A9</item>
+    </style>
+	<style name="mimicryrow1">
+		<item name="android:textColor">#000000</item>
+		<item name="android:textSize">20sp</item>
+	</style>
+	<style name="mimicryrow2">
+		<item name="android:textColor">#000000</item>
+		<item name="android:textSize">18sp</item>
+	</style>
+    <style name="mimicryrow3">
+        <item name="android:textColor">#FFFF00</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="mimicryrow4">
+        <item name="android:textColor">#3b5998</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="mimicryrow5">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="mimicryrow6">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+	<style name="mimicryrow7">
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textSize">18sp</item>
+	</style>
+
+	<string name="photoupdate_btn" translatable="false">PHOTOをアップデート</string>
+	<string name="newsupdate_btn" translatable="false">NEWSをアップデート</string>
+	<string name="facebookconect_btn" translatable="false">Facebookと接続</string>
+	<color name="red">#FF0000</color>
+	<color name="blue">#0000FF</color>
+	<color name="black">#000000</color>
+	<color name="white">#FFFFFF</color>
+
+	<string name="upload" translatable="false">Upload Photo</string>
+	<string name="post" translatable="false">Wall Post!</string>
+	<string name="delete" translatable="false">Delete Post</string>
+
+	<string name="chage_level_txet" translatable="false">難易度</string>
+	<string name="rating_txet" translatable="false">人気度</string>
+    <string name="old_standby_text" translatable="false">定番のものまね</string>
+    <string name="advice_text" translatable="false">ものまねのアドバイス</string>
+    <string name="contribution_text" translatable="false">投稿する</string>
+    <string name="original_description_txet" translatable="false">リストにない人のものまね、細かすぎて伝わらないものまねを録音</string>
+    <string name="original_title_text" translatable="false">タイトル</string>
+    <string name="original_title_hint" translatable="false">人の名前や説明を入力してね。</string>
+    <string name="facebook_sign_txt" translatable="false">Facebook認証</string>
+    <string name="nicname_txt" translatable="false">ニックネーム</string>
+    <string name="nicname_regist" translatable="false">変更する</string>
+
+    <string name="cansel_text" translatable="false">キャンセル</string>
+    <string name="back_text" translatable="false">戻る</string>
+    <string name="video_btn_text" translatable="false">参考動画を観る</string>
+    <string name="like_text" translatable="false">ええね。</string>
+    <string name="delete_text" translatable="false">削除する</string>
+    <string name="facebook_login_text" translatable="false">Facebookにログインしてください。</string>
+    <string name="facebook_loout_text" translatable="false">Facebookにログイン済みです。</string>
+    <string name="facebook_comment_text" translatable="false">Facebookコメント</string>
+    <string name="facebook_comment_hint" translatable="false">ものまねについてコメントを入力</string>
+    <string name="save_date_text" translatable="false">保存日時</string>
+    <string name="contribution_date_text" translatable="false">投稿日時</string>
+    <string name="fbauth" translatable="false">Facebook認証</string>
+    <string name="nicname_text" translatable="false">ニックネーム</string>
+    <string name="title_text" translatable="false">タイトル</string>
+    <string name="nicname_input" translatable="false">ニックネームを入力</string>
+</resources>
